@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data</title>
+    <style>
+       body {
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.container {
+    width: 80%;
+    padding: 20px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;  
+}
+input[type="button"] {
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #007BFF;  
+    color: white;  
+    cursor: pointer;  
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3;  /* Darker shade on hover */
+}
+
+#users-data {
+    width: 100%;  
+    padding: 20px;  
+    box-sizing: border-box;  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.user-data {
+    background-color: #f8f9fa;  
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);  
+    text-align: center;  
+}
+
+.user-data img {
+    max-width: 100%;
+    border-radius: 50%;  
+    margin-bottom: 10px;  
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div id="fetch-user">
+            <input type="button" id="button" value="Fetch User">
+        </div>
+        <div id="users-data"></div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
